@@ -8,7 +8,11 @@ public class MainClass {
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext("StuConfig.xml");
 		
-		Student s=(Student)context.getBean("s1");
-		s.s1();
+		Student s1=(Student)context.getBean("s1");//SetterInjection
+		Student s2=(Student)context.getBean("s2");
+		System.out.println(s1);
+		System.out.println(s2);
+		
+		
 	}
 }
