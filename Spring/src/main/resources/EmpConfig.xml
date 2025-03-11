@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean class="in.Employee" id="e1">
+    
+    <property name="id" value="1"></property>
+    <property name="name" value="sant"></property>
+    <property name="gender" value="male"></property>
+    <property name="job" value="Java_developer"></property>
+    <property name="sal" value="150000"></property>
+    
+    </bean>
+     <bean class="in.Employee" id="e2">
+    
+    <property name="id" value="2"></property>
+    <property name="name" value="Hardik"></property>
+    <property name="gender" value="male"></property>
+    <property name="job" value="All_Rounder"></property>
+    <property name="sal" value="28927"></property>
+    
+    </bean>
+    
+</beans>
