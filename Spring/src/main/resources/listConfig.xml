@@ -10,7 +10,7 @@
     
     
     
-    <bean class="list.Order" id="o1">
+    <bean class="set.Order" id="o1">
     
     <property name="orderid" value="1" />
     <property name="username" value="sant" />
