@@ -7,7 +7,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		ApplicationContext context=new ClassPathXmlApplicationContext("listConfig.xml");
 		
-		Order o=(Order)context.getBean("o1");
+		Order o=(Order)context.getBean("o");
 		System.out.println(o);
 	}
 
