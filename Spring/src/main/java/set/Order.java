@@ -1,6 +1,7 @@
 package set;
 
 import java.util.List;
+import java.util.Set;
 
 public class Order {
 
@@ -8,11 +9,12 @@ public class Order {
 	private String username;
 	private String address;
 	private double price;
-	private List<String >products;
-	public List<String> getProducts() {
+	private Set<String >products;
+	
+	public Set<String> getProducts() {
 		return products;
 	}
-	public void setProducts(List<String> products) {
+	public void setProducts(Set<String> products) {
 		this.products = products;
 	}
 	public int getOrderid() {
