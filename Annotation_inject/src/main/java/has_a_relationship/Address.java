@@ -1,10 +1,18 @@
 package has_a_relationship;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("a")
 public class Address {
 
+	@Value("249")
 	private int dno;
+	@Value("padasalai Street")
 	private String street;
+	@Value("Cheyyar")
 	private String city;
+	@Value("604402")
 	private long pincode;
 	public int getDno() {
 		return dno;
