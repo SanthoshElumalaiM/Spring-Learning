@@ -4,13 +4,20 @@ import org.springframework.context.ApplicationContext;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import io.micrometer.observation.Observation.Context;
-
 public class ZooMainClass {
 
-	ApplicationContext context=new AnnotationConfigApplicationContext(ZooConfig.class);
-
-	con
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new AnnotationConfigApplicationContext(ZooConfig.class);
+		
+		Zoo z=(Zoo)context.getBean("z");
+		
+		z.getAnimalSound();
+	
+	}
+	
+		
+	
 	
 	
 }
