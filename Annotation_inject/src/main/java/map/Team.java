@@ -21,11 +21,13 @@ public class Team {
 	private String game;
 	
 	@Autowired
-	@Qualifier("m1")
+//	@Qualifier("m1")
+	//Autowired  based on name player1
 	private  Map<Integer,String>player1;
 	
 	@Autowired
-	@Qualifier("m2")
+//	@Qualifier("m2")
+	//Autowired  based on name player2
 	private Map<Integer,String>player2;
 
 	@Override

@@ -15,8 +15,9 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
 	@Bean
-	@Qualifier("m1")
-	public Map<Integer,String> m1(){
+//	@Qualifier("m1")
+	//Autowired  based on name player1
+	public Map<Integer,String> player1(){
 		
 		LinkedHashMap<Integer,String> al=new LinkedHashMap<Integer,String>();
 		
@@ -31,9 +32,10 @@ public class Config {
 	}
 	@Bean
 //	@Primary
-	@Qualifier("m2")
+//	@Qualifier("m2")
 
-	public Map<Integer,String> m2(){
+	//Autowired  based on name player2
+	public Map<Integer,String> player2(){
 		
 		LinkedHashMap<Integer,String> al=new LinkedHashMap<Integer,String>();
 		
