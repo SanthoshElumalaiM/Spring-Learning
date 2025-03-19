@@ -13,7 +13,8 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
 	@Bean
-	@Qualifier("m1")
+//	@Qualifier("m1")
+	//Autowired  based on  type
 	public List<String> m1(){
 		
 		ArrayList< String> al=new ArrayList<String>();
@@ -27,21 +28,22 @@ public class Config {
 		return al;
 		
 	}
-	@Bean
-//	@Primary
-	@Qualifier("m2")
 	
-	public List<String> m2(){
-		
-		ArrayList< String> al=new ArrayList<String>();
-		
-		al.add("Bumrah");
-		al.add("Boult");
-		al.add("ishan");
-		al.add("aswin");
-		
-		
-		return al;
-		
-	}
+//	@Bean
+////	@Primary
+//	@Qualifier("m2")
+//	
+//	public List<String> m2(){
+//		
+//		ArrayList< String> al=new ArrayList<String>();
+//		
+//		al.add("Bumrah");
+//		al.add("Boult");
+//		al.add("ishan");
+//		al.add("aswin");
+//		
+//		
+//		return al;
+//		
+//	}
 }
